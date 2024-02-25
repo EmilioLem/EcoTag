@@ -1,0 +1,108 @@
+*{
+    background-color: black !important;
+    color: white;
+}
+
+
+/* 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.element {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover .element {
+    opacity: 1; 
+}
+
+
+.button:hover .element:hover {
+    opacity: 0;
+  }
+  
+  
+  
+  
+  .container2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.element2 {
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.button2 {
+    border: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.button2:click .element {
+    transform: translateX(0); 
+}
+*/
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.element {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out; /* Combine transitions */
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.element2{
+    transform: scale(1);/*Not necesary */
+    transition: transform 0.4s ease-in-out;
+}
+
+.element.visible {
+  opacity: 1; /* Visible state */
+}
+
+.element2.zoomed {
+  transform: scale(1.2); /* Zoom level */
+  /* transform-origin: center center; Set origin for zooming */
+}
+
